@@ -1,0 +1,291 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e9eaea;
+	font-family: 'Varela Round', sans-serif;
+}
+
+/* start --top navigation bar */
+.navbar {
+	width: 100%;
+	display: inline-block;
+	background-color: #2c381e;
+	padding: 10px 0px 5px 0px;
+}
+
+.logo-image {
+	display: inline-block;
+}
+
+.logo-image img{
+	width: 100%;
+	max-width: 200px;
+	height: auto;
+	margin-left: 30px;
+}
+
+.navbar > .topnav {
+  display: inline;
+  float: right;
+	margin-right: 50px;
+}
+
+.topnav a {
+	display: inline;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav > a > span{
+  position: relative;
+  padding-bottom: 1px;
+  border-bottom: 2px solid transparent;
+}
+
+.topnav > a > span:hover{
+	transition: all 0.3s ease;
+  color: #c9c9c9;
+}
+
+.topnav #postAdButton {
+	border: 2px solid #bf4343;
+	padding: 10px 15px;
+	border-radius: 5px;
+	text-align: center;
+	overflow: hidden;
+	text-decoration: none;
+	color: white;
+}
+
+.topnav #postAdButton:hover {
+	background-color: #bf4343;
+	color: white;
+	transition: all 0.3s ease-in;
+}
+
+.fas {
+	margin-left: 10px;
+}
+/* end --top navigation bar */
+
+/* start --side navigation bar */
+.navbar a.icon {
+	display: none;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 0.5s;
+}
+
+.sidenav a {
+  font-size: 17px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+	text-align: center;
+	padding: 20px 0;
+	text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav-content {
+	position: fixed;
+}
+
+.sidenav-content a{
+	padding: 20px 180px 20px 70px;
+}
+
+.sidenav-content a:hover{
+	background: #bf4343;
+}
+/* end --side navigation bar */
+
+/* start --headings */
+.headings {
+	display: block;
+	text-align: center;
+	color: white;
+}
+
+#main-heading {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+#main-subheading {
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+.decorated {
+     overflow: hidden;
+     text-align: center;
+		 font-weight: lighter;
+		 color: #4a4a4a;
+ }
+
+.decorated span{
+    position: relative;
+    display: inline-block;
+}
+
+.decorated span:before, .decorated span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid;
+    width: calc(10vw);
+    margin: 0 20px;
+}
+
+.decorated span:before{
+    right: 100%;
+}
+
+.decorated span:after{
+    left: 100%;
+}
+
+.ctg h2{
+	margin: 0 auto;
+	font-size: 20px;
+	color: #4a4a4a;
+}
+/* end --headings */
+
+/* start --search engine */
+.searchCtg {
+	padding: 80px 0;
+	background-color: #2c381e;
+	margin-bottom: 50px;
+}
+
+.wrap {
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.search {
+	width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid white;
+  border-right: none;
+  padding: 10px;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+	font-size: 18px;
+}
+
+.searchTerm:focus{
+  color: #4a4a4a;
+}
+
+.searchButton {
+  width: 70px;
+  height: 50px;
+  border: 1px solid #bf4343;
+  background: #bf4343;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.searchButton :hover {
+	color: #c9c9c9;
+}
+
+.wrap{
+  width: 40%;
+	margin: 50px auto 10px auto;
+}
+/* end --search engine */
+
+/* start --categories section */
+.ctg-buttons {
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+	margin-bottom: 50px
+}
+
+.ctg-buttons input{
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 10px;
+}
+
+.ctg {
+	margin: 50px 30px 0 20px;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+}
+
+.ctg-buttons :hover {
+	text-decoration: underline #4a4a4a;
+}
+
+.ctg-buttons :focus, .search :focus {
+	outline: 0;
+}
+/* end --categories section */
+
+/* start --responsive design */
+@media screen and (max-width: 755px) {
+  #myTopnav {
+		display: none;
+	}
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+		color: white;
+		margin: 10px 50px 0 0;
+		font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 756px) {
+  .sidenav {
+		display: none;
+	}
+}
+/* end --responsive design */

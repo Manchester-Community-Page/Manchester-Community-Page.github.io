@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Manchester Community Page </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="./scripts/main.js"></script>
+  </head>
+  <body>
+
+      <div class="navbar">
+        <a class="navbar-brand" href="#">
+           <div class="logo-image">
+              <img src="./images/site-logo.png" class="img-fluid" alt="site logo">
+           </div>
+        </a>
+        <div class="topnav" id="myTopnav">
+          <a href="./pages/login.html">
+            <span>Login/Register</span>
+          </a>
+          <a href="./pages/postAd.html">
+            <span id="postAdButton">Post an ad<i class="fas fa-thumbtack"></i></span>
+          </a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="openNav();">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="sidenav" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn" onclick="closeNav()">&times;</a>
+        <div class="sidenav-content">
+          <a href="./pages/login.html">
+            <span>Login/Register</span>
+          </a>
+          <a href=".pages/postAd.html">
+            <span>Post an ad<i class="fas fa-thumbtack"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="searchCtg">
+        <div class="headings">
+          <h1 id="main-heading">Find & Share</h1>
+          <h2 id="main-subheading">within Manchester for free</h2>
+        </div>
+        <div class="wrap">
+          <div class="search">
+            <input type="text" class="searchTerm" placeholder="I'm looking for...">
+            <button type="submit" class="searchButton">
+              <i class="material-icons">search</i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="browseCtg">
+        <h2 class="decorated"><span>Or browse by category</span></h2>
+        <div class="ctg-buttons">
+          <div class="ctg">
+            <input type="image" src="./images/categories/household.jpg" alt="Household">
+            <h2>Household</h2>
+          </div>
+          <div class="ctg">
+            <input type="image" src="./images/categories/hobbies.jpg" alt="Hobbies">
+            <h2>Hobbies</h2>
+          </div>
+          <div class="ctg">
+            <input type="image" src="./images/categories/toys.jpg" alt="Toys">
+            <h2>Toys</h2>
+          </div>
+          <div class="ctg">
+            <input type="image" src="./images/categories/electronics.jpg" alt="Electronics">
+            <h2>Electronics</h2>
+          </div><br/>
+          <div class="ctg">
+            <input type="image" src="./images/categories/garden.jpg" alt="Garden">
+            <h2>Garden</h2>
+          </div>
+          <div class="ctg">
+            <input type="image" src="./images/categories/collectables.jpg" alt="Collectables">
+            <h2>Collectables</h2>
+          </div>
+          <div class="ctg">
+            <input type="image" src="./images/categories/other.jpg" alt="Other">
+            <h2>Other</h2>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
